@@ -1,6 +1,6 @@
 # About
 
-User guide for (pesabot.com)[pesabot.com] framework.
+User guide for [pesabot.com](pesabot.com) framework.
 
 PesaBot is a framework for businesses to create and manage ChatBots on the go. With PesaBot, no knowledge in coding is required.
 

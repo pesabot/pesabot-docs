@@ -3,7 +3,7 @@
 Log in to your Telegram account and go to [https://telegram.me/botfather](https://telegram.me/botfather). You will be directed to the [web version](https://web.telegram.org/#/im). For a first time conversation with the BotFather click **Start** to continue. Your screen should now look like this:
 
 
-![](https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/jykPEKBlRm88u6HeS4GzOVt1qqY9Sl/File%2B%25E2%2580%259CTelegram%2BWeb%2B2017-06-27%2B13-05-11.png%25E2%2580%259D%2B2017-06-27%2B13-07-58.png?Expires=1498645766&Signature=e-YPbD~2L4Bv7WwJchUH2Q59Iud-nnqHZoqv~VP85YhJn-UIRwZyqvN2KvKbvPjE86SdJLBaVm8y7uQ2eI-ughLZK4o60mJNc~uCgCahwJ46jfhLX9wwuXJXMTrIx5m4Aor0FEndcNxSwa1kr4p85E8Cq1coRFafbWeDWhJSfiA7BbIHE6FGdyetHJNoVMOa0Ldf8Vx~H5vbum3i5iOYpbHzhcRmHi7Rx~6hCQhQB06E8GgPA4Lqq4a9YJXUMJj4UqsCBGZYnOcRLmiQbdm5zklJG-tO0aoE1yFI4Fna9jMUxnCVk~CG6iFsrulqbii9tndbuAHHWDDG3Ji72Wzgug__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA)
+![](../img/test.png)
 
 
 Select **/newbot** to continue
