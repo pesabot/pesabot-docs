@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Telegram - PesaBot Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Telegram";
+    var mkdocs_page_input_path = "integrations/telegram.md";
+    var mkdocs_page_url = "/integrations/telegram/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PesaBot Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Get Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../">Integrations</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../messenger/">Messenger</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Telegram</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#creating-a-new-telegram-bot">Creating a new Telegram Bot</a></li>
+    
+
+    <li class="toctree-l2"><a href="#add-your-token-to-pesabot">Add your Token to PesaBot</a></li>
+    
+
+    <li class="toctree-l2"><a href="#test-your-bot">Test your Bot</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../skype/">Skype</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../training/">Bot Training</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../training/intents/">Intents and Modules</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../training/entities/">Entities</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../training/synonyms/">Synonyms</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../support/">Support</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PesaBot Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Telegram</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="creating-a-new-telegram-bot">Creating a new Telegram Bot</h1>
+<p>Log in to your Telegram account and go to <a href="https://telegram.me/botfather">https://telegram.me/botfather</a>. You will be directed to the <a href="https://web.telegram.org/#/im">web version</a>. For a first time conversation with the BotFather click <strong>Start</strong> to continue. Your screen should now look like this:</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/jykPEKBlRm88u6HeS4GzOVt1qqY9Sl/File%2B%25E2%2580%259CTelegram%2BWeb%2B2017-06-27%2B13-05-11.png%25E2%2580%259D%2B2017-06-27%2B13-07-58.png?Expires=1498645766&amp;Signature=e-YPbD~2L4Bv7WwJchUH2Q59Iud-nnqHZoqv~VP85YhJn-UIRwZyqvN2KvKbvPjE86SdJLBaVm8y7uQ2eI-ughLZK4o60mJNc~uCgCahwJ46jfhLX9wwuXJXMTrIx5m4Aor0FEndcNxSwa1kr4p85E8Cq1coRFafbWeDWhJSfiA7BbIHE6FGdyetHJNoVMOa0Ldf8Vx~H5vbum3i5iOYpbHzhcRmHi7Rx~6hCQhQB06E8GgPA4Lqq4a9YJXUMJj4UqsCBGZYnOcRLmiQbdm5zklJG-tO0aoE1yFI4Fna9jMUxnCVk~CG6iFsrulqbii9tndbuAHHWDDG3Ji72Wzgug__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<p>Select <strong>/newbot</strong> to continue</p>
+<p>Type your bot name and submit</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/QvtMMWT5ajlB4tknGuCmH5fvrIfHZS/Telegram%2BWeb%2B2017-06-27%2B15-03-38.png?Expires=1498651488&amp;Signature=S920HuwCJpJvL1drFqGKNCMg~lBljIsEqaQUMgZ1KzOUXVF2smnJKZDyiE7yDKSXX8AYSh03Bbs1bHlffRITG9ws6UeRCj7gVnhwJ8QcjLBmPT9vcWVS140XCXt2QEL4V4Udn61W76r1ScxscpBpAy0ECTYTUxguWKjdvCp0kQgOgM55hEbp8nuTWad-cu4QZiYiebJVWNOb0V8iRCcKI~qB5-4e3ZOYBXp0y~3mFlp4xscSpfKBrvRhL94hNZvtoR1RRmIoSfcdStVn3BmaUYkSMnVAMYyjYzWEa1ddS~EVybLzEVXSOePacePQo2KG3YWgMNPNxdd9Hekbfprt0g__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<p>You will be prompted to add bot username. Fill in as shown below</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/iWJm3ZZ00ogXcs3R1tvPgM8mCJN1l5/Telegram%2BWeb%2B2017-06-27%2B15-06-28.png?Expires=1498651826&amp;Signature=MJW-lBo0iaKf4pJEvXeW6zcpJw7OPZXekz~9qxbWsugeNhW8Sc-Kw1~TkdPulIjtJ-rdJ-Uc5z9-9Utn~a4lwHDP00uKEnXdVEm4yOI2olWvRAxCdydGlmdLEu-X5sLMqqd-bIgytu2YKZV91YuDX1VTlyRDe7UOLWn8Aa0-71bQyk4yJCflb~AEoT3~f1ajjwk~jyNOvP3x-7JTeCcdV0EDOK5LgyxYHRzpp2oAXPqfN4-EOgbBncg4nstgpe-0YEPS89LJ2eecbZJqve3Pe~iazIRHw0wJNacePe70sS8jBXkB-NrCVwLEoKx17maFcQYAd6Wwb-D8Hkg2IqxKzQ__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<p>Copy the <strong>Token</strong></p>
+<p>We'll use this to setup with PesaBot</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/8eZXfHSyYBbxOFyL6wX26bZ0oEKT4C/Telegram%2BWeb%2B2017-06-27%2B15-30-18.png?Expires=1498653057&amp;Signature=YMxOrY6EKxqrYcfsLY9yM9BDQbdRl1GtqqVSTs9x7esbvyKSlQvJ0izdQ2YysfVOlvPIlg9OMqetx4Gm12Bqbp7kqBt6d-ZukzP2O-ROE-q5nd9y48HQQMcmOp~P~XMVYg6NcZApOJjrMfDMzfedRGka9vG0JzCoP0EEwXNfSYjgp7tlWEjqdaVpBF~akvzGq9id5J9WhiMgB5KWednFiza7Ol9aV06u62m~9Y7AuuyWt6I5HnpnfBtsQ0JE9JHWKZDLB7whUZdkMC09DDShL~bflIyAZZllHA61g4BScvksZK7u8r8294RfuplI4cPGl0dxHOmQodIP9c~RCxOBuw__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<h1 id="add-your-token-to-pesabot">Add your Token to PesaBot</h1>
+<p>Open the integration area and find telegram. See screenshots below</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/nyDJu51jIl6o8Kf3VWdk5LagjVOtph/PesaBot%2B%257C%2BAdmin%2BDashboard%2BTemplate%2B2017-06-27%2B15-15-56.png?Expires=1498652222&amp;Signature=csyq9DQ14ybkD7IOvxppDB~6I6vzdkN2BzJKzgvPFQ9yaQrJyHmZPf9qd~yK8csWi~LkLibCFP15t7R3hiCMQ6zLHLRPdp2hnduk8ztwhLcpV1ZpJnwi1Gt5y4hMAtH23qCcJGAmX-7t4-krwa6gGodtoeE41nT11p90fcbBpMXnLYVPyyn32ZG79t7vmA5Gvic6Dc2w1uIbvDrRFj3NRe1nfUVSUFhLT1425IjGIEzg4eg37DM5P7KWXv7h1VtDGMJU5TL0jt9WES9vJiXkvlkkp3NsHNL~zrIO5QVTyY~QBgsa7B6G-9JIs9Z7SJ0Xq2wMzs8--GAUPEixtv0y-A__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<p>Select Telegram</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/DmlQEq8rA62ybWfDJlR6If3l0ca94I/PesaBot%2B%257C%2BApps%2BIntegrations%2B2017-06-27%2B15-16-39.png?Expires=1498652233&amp;Signature=V0RBp6Fg3QoE0Q18J2JG6ku4wgEjXJ1vsEey3mFRYRJhiFVd5O7YPBwWLV6XMSAbR2dNUrnfuOUPW-qCjSZN0HcmIPmpsu7kZUOpfjhHz89Px5rqxtWrIaGwRb6Zt51cQk1qzlx2qfARkmJLabu8DxFg63Kll5bqS-HpM5sYpBumZjKvNfQF9VE1Es9a8XsQOxjFFD3~Ga~IYM3zKYMYZqAWlEE0zGP4W3Hls0QMll4kRdWygjVV6TEXGW-yME7KzVC5Saf3qTeoljT-kA6-x5f6Dj8~IN0BefwvylWFP0L3uDvPI8SDwbf5d0VpWtZKxyZux~nfpsfsiz1mGn1pQA__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<p>Finally Paste your <strong>Token</strong> to complete set. Make sure the <strong>Enable</strong> flag is selected.</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/ZThtUjr3ZEwwmvv3nxdKg05ryaaMgo/PesaBot%2B%257C%2BApps%2BIntegrations%2B2017-06-27%2B15-20-04.png?Expires=1498652451&amp;Signature=ZG1YHLhBUfihll28cokEq9x~hlZEMMrh0qq0UsfWFwE0Vc5Kk9901kNSuw3Dggo2WrKq8fDazILK0FqooXwdE41t4VkWys9zO~lxrBi~F4DPIUtwkpAdZI1wMXFCOWtSzv4GX4~HpVeP~jRm9-Og4rLoaHmYqvq3qPMaAHQOI3sR-67tIFzGIl7soJsqIueRXm4Tn-EVxnHAK8ttXDG3iQ0k7BgWsazzoDy9AjLt~KeA79VG5o28tSnGxUuGNMDLkbpNZ~bCC00QmYpLkoM4BH9ijaRQcT~9Iu1zZv9MQsK6BosjIeMDxxJALECs1Kf3mOMitdymtsTLYb6GeiF57g__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<h1 id="test-your-bot">Test your Bot</h1>
+<p>Search for the bot</p>
+<p><img alt="" src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_91267/VXDqfccsS9ZuLbHbo7aimDtGRjruJB/Telegram%2BWeb%2B2017-06-27%2B15-24-16.png?Expires=1498652751&amp;Signature=Gg7R9UYXqzKPQ7yzPXIxldKwB-J6p95Z14Wb10TrKmywUWhNTFuiTbHFv5oDfcmtxtRL5tqep-n-u5-r6NUxLzExjjaN0pOh7F-5UTa5elk8NU~jPEwbXkfSd6ynH2TA2i4UBaTi~5bIAGdjdkGMwe2leqvJWzcaXJwDLg15wTTrTh46A3Fjh7xtn0ZLsqX5vLF-QSB0UHszdcxvpajxskrS3VVI4-bna-2gi4pAcAIRnWd00Wl4zhQVi7VExiV4StbV0239lq1Y0WoYNrSUI5hMuEFFa2PkTwLCOk0~ZV4QBX3C83AW9wDJRCEIVOEYvoB0cps2pNQVbZC6j-ebmQ__&amp;Key-Pair-Id=APKAJHEJJBIZWFB73RSA" /></p>
+<p>Cogratulation. Your Telegram is up. You can now start chating with it and share to the world.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../skype/" class="btn btn-neutral float-right" title="Skype">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../messenger/" class="btn btn-neutral" title="Messenger"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../messenger/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../skype/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
