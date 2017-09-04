@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# Pesabot Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+PesaBot is a frameowk for creating contextual chatbots using visual UI. Our main aim is to make chatbots development and training easy and fast.
 
-## Commands
+## Main Features
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+* Easy to configure UI
+* Artificial Intelligence out of the box
+* Multiple publishing channels e.g Messenger, Telegram etc
+* Webhooks for third-party integrations
 
-## Project layout
+## Support
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Talk to us at [hello@pesabot.com](hello@pesabot.com) or [support@pesabot.com](support@pesabot.com). Visit our site [PesaBot](https://pesabot.com) for more details.
+
+A copy of this documentation is also available at [Github.com](https://github.com/pesabot/pesabot-docs). Feel free to fork and send pull requests.

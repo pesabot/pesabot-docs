@@ -2,12 +2,13 @@ site_name: PesaBot Docs
 theme: readthedocs
 pages:
     - Get Started: index.md
-    - Integrations: integrations/index.md
-    - Messenger: integrations/messenger.md
-    - Telegram: integrations/telegram.md
-    - Skype: integrations/skype.md
+    - Publishing: publishing/index.md
+    - Web: publishing/web.md
+    - Messenger: publishing/messenger.md
+    - Telegram: publishing/telegram.md
+    - Skype: publishing/skype.md
     - Bot Training: training/index.md
     - Intents and Modules: training/intents.md
     - Entities: training/entities.md
     - Synonyms: training/synonyms.md
-    - Support: support.md
+    - Integrations: integrations/index.md
