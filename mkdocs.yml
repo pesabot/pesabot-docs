@@ -6,7 +6,6 @@ pages:
     - Web: publishing/web.md
     - Messenger: publishing/messenger.md
     - Telegram: publishing/telegram.md
-    - Skype: publishing/skype.md
     - Bot Training: training/index.md
     - Intents and Modules: training/intents.md
     - Entities: training/entities.md

@@ -1,5 +1,7 @@
-# Creating a new Telegram Bot
+# Telegram
+Publish your bot on Telegram platform.
 
+## Creating a new Telegram Bot
 1. Log in [https://telegram.me/botfather](https://telegram.me/botfather) to create a new bot.
 2. Click the Start button in the web interface or type /start
 3. Click on or type /newbot and enter a name
@@ -8,13 +10,13 @@
 
 ![](../img/telegram_new_bot.png)
 
-# Setting up PesaBot 
+## Setting up PesaBot 
 1. Open the Telegram option under the [integration](https://pesabot.com/integrations) section
 2. Paste the token copied earlier from Telegram and click save changes.
 
 ![](../img/telegram_paste_token.png)
 
-# Test your Bot
+## Test your Bot
 1. Go back to Telegram and search for the bot to begin chat.
 
 ![](../img/telegram_test_bot.png)
